@@ -52,15 +52,15 @@ using namespace std;
 
 struct ButtonProperty_st: public CommonProperty_st{
     unsigned int onlyInAllActions;		// ТолькоВоВсехДейтсвиях
-    bool check;				    		// Пометка
-    unsigned int representation;	    // Отображение
-    unsigned int imagePosition;		    // ПоложениеКартинки
+    bool check;					// Пометка
+    unsigned int representation;		// Отображение
+    unsigned int imagePosition;			// ПоложениеКартинки
     unsigned int shape;			    	// Фигура
-    unsigned int shapeRepresentation;	// ОтображениеФигуры
+    unsigned int shapeRepresentation;		// ОтображениеФигуры
     string textColor;			    	// ЦветТекста
     string backColor;			    	// ЦветФона
     string borderColor;			    	// ЦветРамки
-    string font;			    		// Шрифт
+    string font;				// Шрифт
 };
 
 #endif

@@ -9,15 +9,16 @@
 #define __DOCUMENT_H__
 
 #include "form.h"
+#include "requisit.h"
 
 class Document{
 private:
-    Form *forms;	// Формы
-    //*requisites	// Реквизиты
-    //*tables_parts	// Табличные части
+    Form *forms;	    // Формы
+    Requisit *requisites;   // Реквизиты
+    //*tables_parts	    // Табличные части
 
-    //*commands;	// Команды
-    //*makets;		// Макеты
+    //*commands;	    // Команды
+    //*makets;		    // Макеты
 
 public:
     Document();

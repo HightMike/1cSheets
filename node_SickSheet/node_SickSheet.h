@@ -32,7 +32,7 @@ class Form_Document: public Form
     FieldProperty_st fp_NumberLS;   // НомерЛисткаНетрудоспособности
 
 public:
-    Form_Document();
+    Form_Document(string Name, string Synonym, string Comment);
     ~Form_Document();
 };
 
@@ -40,7 +40,7 @@ public:
 class Form_List: public Form
 {
 public:
-    Form_List();
+    Form_List(string Name, string Synonym = "", string Comment = "");
     ~Form_List();
 };
 

@@ -104,6 +104,7 @@ namespace ns_Field{
 using namespace std;
 
 struct FieldProperty_st: public CommonProperty_st{
+    unsigned int view;			    // Вид
     bool selectType;			    // ВыбиратьТип
     string mask;			    // Маска
     unsigned int passwordMode;		    // РежимПароля

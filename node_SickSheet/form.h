@@ -8,11 +8,20 @@
 #ifndef __FORM_H__
 #define __FORM_H__
 
+#include <string>
+
+using namespace std;
+
 //! Класс Форма
 class Form
 {
+private:
+    string name;    // Имя
+    string synonym; // Синоним
+    string comment; // Комментарий
+
 public:
-    Form();
+    Form(string Name, string Synonym = "", string Comment = "");
     virtual ~Form();
 };
 

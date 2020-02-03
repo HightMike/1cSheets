@@ -4,10 +4,11 @@ INCLUDES = -I./formCtrls/
 
 DOCUMENT = document
 FORM = form
+REQUISIT = requisit
 
 SICK_SHEET = node_SickSheet
 
-all: ./obj/$(DOCUMENT).o ./obj/$(FORM).o  ./obj/$(SICK_SHEET).o
+all: ./obj/$(DOCUMENT).o ./obj/$(FORM).o ./obj/$(REQUISIT).o ./obj/$(SICK_SHEET).o
 	date
 
 clean:
@@ -20,6 +21,10 @@ clean:
 ./obj/$(FORM).o:
 	g++ $(CFLAGS) -c $(FORM).cpp $(INCLUDES)
 	mv $(FORM).o ./obj
+
+./obj/$(REQUISIT).o:
+	g++ $(CFLAGS) -c $(REQUISIT).cpp $(INCLUDES)
+	mv $(REQUISIT).o ./obj
 
 ./obj/$(SICK_SHEET).o:
 	g++ $(CFLAGS) -c $(SICK_SHEET).cpp $(INCLUDES)
