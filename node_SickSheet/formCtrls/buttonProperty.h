@@ -51,7 +51,7 @@ namespace ns_Button {
 using namespace std;
 
 struct ButtonProperty_st: public CommonProperty_st{
-	unsigned int onlyInAllActions;		// ТолькоВоВсехДейтсвиях
+    unsigned int onlyInAllActions;		// ТолькоВоВсехДейтсвиях
     bool check;				    		// Пометка
     unsigned int representation;	    // Отображение
     unsigned int imagePosition;		    // ПоложениеКартинки

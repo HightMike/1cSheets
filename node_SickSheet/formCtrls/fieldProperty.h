@@ -7,33 +7,34 @@
 
 #include <string>
 
-using namespace std;
+#include "commonProperty.h"
 
 namespace ns_Field{
-
     //! Перечисление Вид поля
     enum VIEW_FIELD_e{
 	VIEW_FIELD_INPUT = 0,	    // Поле ввода
-	VIEW_FIELD_FLAG,		    // Поле флажка
-	VIEW_FIELD_TOGGLE,		    // Поле переключателя
-	VIEW_FIELD_PICTURE,		    // Поле картинки
+	VIEW_FIELD_FLAG,	    // Поле флажка
+	VIEW_FIELD_TOGGLE,	    // Поле переключателя
+	VIEW_FIELD_PICTURE,	    // Поле картинки
 	VIEW_FIELD_INDICATOR,	    // Поле Индикатор
 	VIEW_FIELD_CTRL_BAND,	    // Поле полосы регулирования
-	VIEW_FIELD_TABLE_DOCUMENT,	    // Поле табличного документа
+	VIEW_FIELD_TABLE_DOCUMENT,  // Поле табличного документа
 	VIEW_FIELD_CALENDAR,	    // Поле календарь
-	VIEW_FIELD_FORMAT_DOCUMENT,	    // Поле форматированного документа
-	VIEW_FIELD_GRAPHICAL_SCHEME,    // Поле графической схемы
-	VIEW_FIELD_SHEDULER		    // Поле планировщика
+	VIEW_FIELD_FORMAT_DOCUMENT, // Поле форматированного документа
+	VIEW_FIELD_GRAPHICAL_SCHEME,// Поле графической схемы
+	VIEW_FIELD_SHEDULER	    // Поле планировщика
     };
 
     //! Перечисление РежимПароля
     enum PASSWORD_MODE_e{
-	PASSWORD_MODE_YES = 0   // Да
+	PASSWORD_MODE_NO = 0,   // Нет
+	PASSWORD_MODE_YES	// Да
     };
 
     //! Перечисление КнопкаВыпадающегоСписка
     enum BUTTON_DROPDOWN_LIST_e{
-	BUTTON_DROPDOWN_LIST_YES = 0 //Да
+	BUTTON_DROPDOWN_LIST_NO = 0,	// Нет
+	BUTTON_DROPDOWN_LIST_YES	// Да
     };
 
     //! Перечисление ОтображениеПредупреждениеПриРедавктриовании
@@ -99,6 +100,8 @@ namespace ns_Field{
     };
 
 };  //eo namespace ns_Field
+
+using namespace std;
 
 struct FieldProperty_st: public CommonProperty_st{
     bool selectType;			    // ВыбиратьТип

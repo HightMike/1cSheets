@@ -9,23 +9,23 @@
 #include <string>
 
 namespace ns_CommonProperty{
-//! Перечисление Положение заголовка
-enum TITLE_POSITION_e{
-    TITLE_POSITION_NO = 0,  // Нет
-    TITLE_POSITION_AUTO,    // Авто
-    TITLE_POSITION_LEFT,    // Лево
-    TITLE_POSITION_TOP,	    // Верх
-    TITLE_POSITION_RIGHT,   // Право
-    TITLE_POSITION_BOTTOM   // Низ
-};
+    //! Перечисление Положение заголовка
+    enum TITLE_POSITION_e{
+	TITLE_POSITION_NO = 0,  // Нет
+	TITLE_POSITION_AUTO,    // Авто
+	TITLE_POSITION_LEFT,    // Лево
+	TITLE_POSITION_TOP,	    // Верх
+	TITLE_POSITION_RIGHT,   // Право
+	TITLE_POSITION_BOTTOM   // Низ
+    };
 
-//! Перечисление Отображение подсказки
-enum TOOL_TIP_REPRESENTATION_e{
-    TOOL_TIP_REPRESENTATION_NO = 0,	// Нет
-    TOOL_TIP_REPRESENTATION_AUTO,	// Авто
-    TOOL_TIP_REPRESENTATION_POPUP,	// Всплывающая
-    TOOL_TIP_REPRESENTATION_BUTTON	// Кнопка
-};
+    //! Перечисление Отображение подсказки
+    enum TOOL_TIP_REPRESENTATION_e{
+	TOOL_TIP_REPRESENTATION_NO = 0,	// Нет
+	TOOL_TIP_REPRESENTATION_AUTO,	// Авто
+	TOOL_TIP_REPRESENTATION_POPUP,	// Всплывающая
+	TOOL_TIP_REPRESENTATION_BUTTON	// Кнопка
+    };
 }; //ns_CommonProperty
 
 //struct extendedToolTip //Структура Расширенная подсказка???

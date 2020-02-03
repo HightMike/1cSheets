@@ -66,6 +66,57 @@ Form_Document::Form_Document()
     bp_Write.backColor = "Авто";							    // ЦветФона
     bp_Write.borderColor = "Авто";							    // ЦветРамки
     bp_Write.font = "Авто";								    // Шрифт
+
+
+    fp_Employee.name = "Сотрудник";						    	    // Имя
+    fp_Employee.title = "";						    	    	    // Заголовок
+    fp_Employee.titlePosition = ns_CommonProperty::TITLE_POSITION_AUTO;		    	    // ПоложениеЗаголовка
+    fp_Employee.dataPath = "Объект.Сотрудник";				    	   	    // ПутьКДанным
+    fp_Employee.commandName = "";						    	    // ИмяКоманды
+    fp_Employee.skipOnInput = true;					    	    	    // Пропускать при вводе
+    fp_Employee.enabled = false;					       	    	    // АктивизироватьПоУмолчанию
+    fp_Employee.viewOnly = false;					    	    	    // Только просмотр
+    fp_Employee.autoMaxWidth = true;						    	    // АвтоМаксимальнаяШирина
+    fp_Employee.autoMaxHeight = true;						    	    // АвтоМаксимальнаяВысота
+    fp_Employee.width = 0;							    	    // Ширина
+    fp_Employee.height = 0;							    	    // Высота
+    fp_Employee.toolTip = "";								    // Подсказка
+    fp_Employee.toolTipRepresentation = ns_CommonProperty::TOOL_TIP_REPRESENTATION_AUTO;    // ОтображениеПодсказки
+    fp_Employee.extendedToolTip = "";							    // РасширеннаяПодсказка (м.б. текст, картинки, ссылки. Самостоятельный типДанных?)
+        fp_Employee.selectType = true;			    	    	    	    	    // ВыбиратьТип
+    fp_Employee.mask = "";			    	    	    	    	    	    // Маска
+    fp_Employee.passwordMode = ns_Field::PASSWORD_MODE_NO;		   	    	     // РежимПароля
+    fp_Employee.modeSelectFromList = true;		    	    	    	    	    // РежимВыбораИзСписка
+    fp_Employee.selectList="";			    	    	    	    	   	     // СписокВыбора
+    fp_Employee.buttonDropdownList = ns_Field::BUTTON_DROPDOWN_LIST_NO;	    	    	    // КнопкаВыпадющегоСписка
+    fp_Employee.editFormat = "";			    	    	    	    	    // ФорматРедактирования
+    fp_Employee.maxValue = 0;		    	    	    	    	    	    	    // МаксимальноеЗначение
+    fp_Employee.minValue = 0;		    	    	    	    	    	    	    // МинимальноеЗначение
+    fp_Employee.selectGroupElements = "";		    	    	    	    	    // Выбор групп и элементов
+    fp_Employee.warningEdit = "";			    	    	    	    	    // Предупреждение при редактировании
+    fp_Employee.representationWarningEdit = ns_Field::REPRESENTATION_WARNING_EDIT_AUTO;	    // ОтборажениеПредупреждениеПриРедактировании
+    fp_Employee.quickSelect = ns_Field::QUICK_SELECT_AUTO;		   	    	     // БыстрыйВыбор
+    fp_Employee.historySelectEnter = ns_Field::HISTORY_SELECT_ENTER_AUTO;	    	    // История выбора при вводе
+    fp_Employee.linksSelectParameters = "";	    	    	    	    	    	    // СвязиПараметровВыбора
+    fp_Employee.selectParameters = "";		    	    	    	    	    	    // ПараметрыВыбора
+    fp_Employee.buttonCreation = ns_Field::BUTTON_CREATION_AUTO;		    	    // Кнопка создания
+    fp_Employee.relationshipByType = "";		    	    	    	    	    // СвязьПоТипу
+    fp_Employee.selectForm = "";			    	    	    	    	    // ФормаВыбора
+    fp_Employee.enterHint = "";			    	    	    	    	    	    // ПодсказкаВвода
+    fp_Employee.viewFlagSwitch = ns_Field::VIEW_FLAG_SWITCH_Auto;		     	    // Вид флажка\переключателя
+    fp_Employee.scale = false;				    	    	    	    	    // Масштабировать
+    fp_Employee.textNotSelectImage = "";						    // Текст невыбранной картинки
+    fp_Employee.representation = ns_Field::REPRESENTATION_SMOOTH;			    // Отображение
+    fp_Employee.displayPercentages = false;						    // Отображать проценты
+    fp_Employee.displayMarking = ns_Field::DISPLAY_MARKING_NOT_DISPLAY;			    // Отображение разметки
+    fp_Employee.stepMarking = 1;							    // Шаг разметки
+    fp_Employee.scrollbarVertical = ns_Field::SCROLLBAR_AUTO_USE;			    // Вертикальная полоса прокрутки
+    fp_Employee.scrollbarHorizontal = ns_Field::SCROLLBAR_AUTO_USE;			    // Горизонтальная полоса прокрутки
+    fp_Employee.editing = true;								    // Редактирование
+    fp_Employee.displayGrid = false;							    // Отображать сетку
+    fp_Employee.modeSelection = ns_Field::MODE_SELECTION_SINGLE;			    // Режим выделения
+    fp_Employee.displayMonthsPanel = false;						    // ОтображатьПанельМесяцев
+    fp_Employee.commandsComposition = "";						    // СоставКоманд
     ///eo Init////
 }
 
