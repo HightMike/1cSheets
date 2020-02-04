@@ -1,12 +1,60 @@
 
 #include "node_SickSheet.h"
 
-Node_SickList::Node_SickList()
+Node_SickSheet::Node_SickSheet()
 {
+    //!INIT
+
+    name = "БольничныйЛист";// имя
+    synonym = "БольничныйЛист"; // синоним
+    comment = ""; //комментарий
+    //Модуль объекта
+    //Модуль менеджера
+    //Нумератор
+    typeNumber = ns_Document::TYPE_NUMBER_STRING;	//Тип номера
+    lengthNumber = 11;	//Длина Номера
+    permLengthNumber = ns_Document::PERM_LENGTH_NUMBER_VARIABLE;  //Допустимая длина номера
+    periodicity = ns_Document::PERIODICITY_WITHIN_YEAR;	//Перодичность
+    controlUnique = true; // Контроль уникальности
+    autoNumeration = true;// Автонумерация
+    //TODO // Стандартные реквизиты
+    //TODO // Характеристики
+    //TODO // Вводится на основании
+    hold = ns_Document::HOLD_ALLOW; //Проведение
+    holdOperative = ns_Document::HOLD_OPERATIVE_FORBID; // Оперативное проведение
+    deleteMovements = ns_Document::DELETE_MOVEMENTS_AUTO_DELETE; // Удаление движений
+    writingMovementsHold = ns_Document::WRITING_MOVEMENTS_HOLD_SELECT; // Запись движений при проведении
+    fillSequence = ns_Document::FILL_SEQUENCE_AUTO; // заполнение последовательностей
+    //TODO // Движения
+    privilegedModeHold = true; // Привилигированный режим при проведении
+    privilegedModeCancel = true; // Привилигированный режим при отмене
+    // TODO // поля блокировки данных
+    modeCtrlDataLock = ns_Document::MODE_CTRL_DATA_LOCK_AUTO; // Режим управления блокировкой данных
+    fullTextSearch = ns_Document::FULL_TEXT_SEARCH_USE; // Полнотекстовый поиск
+    historyData = ns_Document::HISTORY_DATA_NOT_USE; // История данных
+    useStandartCommans = true;// Использовать стандарные команды
+    //TODO // Ввод по строке
+    createOnEnter = ns_Document::CREATE_ON_ENTER_USE; // Создание при вводе
+    methodsSearchString = ns_Document::METHODS_SEARCH_STRING_BEGIN; // Способ поиска строки
+    fullTextSearchString = ns_Document::FULL_TEXT_SEARCH_STRING_NOT_USE; // Полнотекстовый поиск при вводе по строке
+    modeGettingData = ns_Document::MODE_GETTING_DATA_DIRECTLY; // Режим подлучения данных
+    historySelectEnter = ns_Document::MODE_GETTING_DATA_DIRECTLY; // История выбора при вводе
+    //TODO Основная форма объекта
+    //TODO Основная форма списка
+    //TODO Основная форма выбора
+    representationObject = "";// Представление объекта
+    extendedRepresentationObject = "";// расширенное представление объекта
+    representationList = "Больничные листы";// представление списка
+    extendedRepresentationList = ""; // расширенное представление списка
+    explanation = ""; // поянение
+    includeInContents = true; // Включать в соержание
+    // TODO // Справочная информация
+
+    //eo INIT
 
 }
 
-Node_SickList::~Node_SickList()
+Node_SickSheet::~Node_SickSheet()
 {
 
 }

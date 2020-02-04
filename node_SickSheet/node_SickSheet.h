@@ -8,18 +8,22 @@
 #ifndef __SICKSHEET_H__
 #define __SICKSHEET_H__
 
+#include <string>
+
 #include "document.h"
 #include "form.h"
 
 #include "buttonProperty.h"
 #include "fieldProperty.h"
 
+using namespace std;
+
 // Класс БольничныйЛист
-class Node_SickList: public Document{
+class Node_SickSheet: public Document{
 
 public:
-    Node_SickList();
-    ~Node_SickList();
+    Node_SickSheet();
+    ~Node_SickSheet();
 };
 
 //! Класс ФормаДокумента

@@ -51,7 +51,7 @@ namespace ns_Document{
 
     //! заполнение последовательностей
     enum FILL_SEQUENCE_e{
-	FILL_SEQUENCE_e = 0, // заполнять автоматически
+	FILL_SEQUENCE_AUTO = 0, // заполнять автоматически
     };
 
     //! Режим управления блокировкой данных
@@ -99,7 +99,7 @@ namespace ns_Document{
 using namespace std;
 
 class Document{
-private:
+protected:
 
     //! Свойства метаобъекта Документ
     //! Основные
@@ -111,7 +111,7 @@ private:
     //Модуль менеджера
 
     //! Данные
-    //Нумератор
+    //TODO Нумератор
     unsigned int typeNumber;	//Тип номера
     unsigned int lengthNumber;	//Длина Номера
     unsigned int permLengthNumber;  //Допустимая длина номера
