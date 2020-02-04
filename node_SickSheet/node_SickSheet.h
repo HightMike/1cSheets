@@ -16,6 +16,7 @@
 
 // Класс БольничныйЛист
 class Node_SickList: public Document{
+
 public:
     Node_SickList();
     ~Node_SickList();
