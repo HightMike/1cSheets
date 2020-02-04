@@ -46,7 +46,7 @@ namespace ns_Button {
 	SHAPE_REPRESENTATION_ALWAYS,    // Всегда
 	SHAPE_REPRESENTATION_ACTIVE	    // При активности
     };
-};  // eo ns_Button
+}  // eo ns_Button
 
 using namespace std;
 

@@ -28,7 +28,7 @@ Node_SickSheet::Node_SickSheet()
     //TODO // Движения
     privilegedModeHold = true; // Привилигированный режим при проведении
     privilegedModeCancel = true; // Привилигированный режим при отмене
-    // TODO // поля блокировки данных
+    //TODO // поля блокировки данных
     modeCtrlDataLock = ns_Document::MODE_CTRL_DATA_LOCK_AUTO; // Режим управления блокировкой данных
     fullTextSearch = ns_Document::FULL_TEXT_SEARCH_USE; // Полнотекстовый поиск
     historyData = ns_Document::HISTORY_DATA_NOT_USE; // История данных
@@ -50,7 +50,7 @@ Node_SickSheet::Node_SickSheet()
     includeInContents = true; // Включать в соержание
     // TODO // Справочная информация
 
-    //eo INIT
+    //!eo INIT
 
 }
 

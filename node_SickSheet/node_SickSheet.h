@@ -15,11 +15,21 @@
 
 #include "buttonProperty.h"
 #include "fieldProperty.h"
+#include "requisit.h"
 
 using namespace std;
 
+//class Form_Document;
+//class Form_List;
+
 // Класс БольничныйЛист
 class Node_SickSheet: public Document{
+    Requisit r_Employee;		// Сотрудник
+    Requisit r_MonthChargeString;	// МесяцНачисленияСтрокой
+    Requisit r_NumberSheetDisabilities;	// Номер листка нетрудоспособности
+
+    //Form_Document formDocument;	// Форма документа
+    //Form_List formList;	// Форма списка
 
 public:
     Node_SickSheet();

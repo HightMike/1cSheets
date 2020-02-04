@@ -16,7 +16,7 @@
 namespace ns_Document{
     //!Тип номера
     enum TYPE_NUMBER_e{
-	TYPE_NUMBER_STRING = 0	//Строка
+	TYPE_NUMBER_STRING = 0	// Строка
     };
 
     //! Допустимая длина номера
@@ -26,7 +26,7 @@ namespace ns_Document{
 
     //! Периодичность
     enum PERIODICITY_e{
-	PERIODICITY_WITHIN_YEAR = 0 //В пределах года
+	PERIODICITY_WITHIN_YEAR = 0 // В пределах года
     };
 
     //! Проведение
@@ -56,12 +56,12 @@ namespace ns_Document{
 
     //! Режим управления блокировкой данных
     enum MODE_CTRL_DATA_LOCK_e{
-	MODE_CTRL_DATA_LOCK_AUTO = 0, //автоматический
+	MODE_CTRL_DATA_LOCK_AUTO = 0, // автоматический
     };
 
     //! Полнотекстовый поиск
     enum FULL_TEXT_SEARCH_e{
-	FULL_TEXT_SEARCH_USE = 0, //Использовать
+	FULL_TEXT_SEARCH_USE = 0, // Использовать
     };
 
     //! История данных
@@ -92,8 +92,6 @@ namespace ns_Document{
     enum HISTORY_SELECT_ENTER_e{
 	HISTORY_SELECT_ENTER_AUTO = 0 // Авто
     };
-
-
 }
 
 using namespace std;
@@ -103,56 +101,53 @@ protected:
 
     //! Свойства метаобъекта Документ
     //! Основные
-    string name;// имя
-    string synonym; // синоним
-    string comment; //комментарий
-
-    //Модуль объекта
-    //Модуль менеджера
-
+    string name;			    // имя
+    string synonym;			    // синоним
+    string comment;			    // комментарий
+    //TODO //Модуль объекта
+    //TODO //Модуль менеджера
     //! Данные
     //TODO Нумератор
-    unsigned int typeNumber;	//Тип номера
-    unsigned int lengthNumber;	//Длина Номера
-    unsigned int permLengthNumber;  //Допустимая длина номера
-    unsigned int periodicity;	//Перодичность
-    bool controlUnique; // Контроль уникальности
-    bool autoNumeration;// Автонумерация
+    unsigned int typeNumber;		    // Тип номера
+    unsigned int lengthNumber;		    // Длина Номера
+    unsigned int permLengthNumber;	    // Допустимая длина номера
+    unsigned int periodicity;		    // Перодичность
+    bool controlUnique;			    // Контроль уникальности
+    bool autoNumeration;		    // Автонумерация
     //TODO // Стандартные реквизиты
     //TODO // Характеристики
     //TODO // Вводится на основании
-    unsigned int hold; //Проведение
-    unsigned int holdOperative; // Оперативное проведение
-    unsigned int deleteMovements; // Удаление движений
-    unsigned int writingMovementsHold; // Запись движений при проведении
-    unsigned int fillSequence; // заполнение последовательностей
+    unsigned int hold;			    //Проведение
+    unsigned int holdOperative;		    // Оперативное проведение
+    unsigned int deleteMovements;	    // Удаление движений
+    unsigned int writingMovementsHold;	    // Запись движений при проведении
+    unsigned int fillSequence;		    // заполнение последовательностей
     //TODO // Движения
-    bool privilegedModeHold; // Привилигированный режим при проведении
-    bool privilegedModeCancel; // Привилигированный режим при отмене
-    // TODO // поля блокировки данных
-    unsigned int modeCtrlDataLock; // Режим управления блокировкой данных
-    unsigned int fullTextSearch; // Полнотекстовый поиск
-    unsigned int historyData; // История данных
+    bool privilegedModeHold;		    // Привилигированный режим при проведении
+    bool privilegedModeCancel;		    // Привилигированный режим при отмене
+    //TODO				    // поля блокировки данных
+    unsigned int modeCtrlDataLock;	    // Режим управления блокировкой данных
+    unsigned int fullTextSearch;	    // Полнотекстовый поиск
+    unsigned int historyData;		    // История данных
     //! Представление
-    bool useStandartCommans;// Использовать стандарные команды
+    bool useStandartCommans;		    // Использовать стандарные команды
     //TODO // Ввод по строке
-    unsigned int createOnEnter; // Создание при вводе
-    unsigned int methodsSearchString; // Способ поиска строки
-    unsigned int fullTextSearchString; // Полнотекстовый поиск при вводе по строке
-    unsigned int modeGettingData; // Режим подлучения данных
-    unsigned int historySelectEnter; // История выбора при вводе
-    //TODO Основная форма объекта
-    //TODO Основная форма списка
-    //TODO Основная форма выбора
-    string representationObject;// Представление объекта
-    string extendedRepresentationObject;// расширенное представление объекта
-    string representationList;// представление списка
-    string extendedRepresentationList; // расширенное представление списка
-    string explanation; // поянение
-
+    unsigned int createOnEnter;		    // Создание при вводе
+    unsigned int methodsSearchString;	    // Способ поиска строки
+    unsigned int fullTextSearchString;	    // Полнотекстовый поиск при вводе по строке
+    unsigned int modeGettingData;	    // Режим подлучения данных
+    unsigned int historySelectEnter;	    // История выбора при вводе
+    //TODO // Основная форма объекта
+    //TODO // Основная форма списка
+    //TODO // Основная форма выбора
+    string representationObject;	    // Представление объекта
+    string extendedRepresentationObject;    // расширенное представление объекта
+    string representationList;		    // представление списка
+    string extendedRepresentationList;	    // расширенное представление списка
+    string explanation;			    // поянение
     //! Справочная информация
-    bool includeInContents; // Включать в соержание
-    // TODO // Справочная информация
+    bool includeInContents;		    // Включать в соержание
+    //TODO // Справочная информация
 
     //! Состав документа
     Form *forms;	    // Формы

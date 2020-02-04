@@ -84,9 +84,9 @@ private:
     //TODO // Параметры выбора
     //TODO // Форма выбора
 
-    unsigned int quickSelect;	    //Быстрый выбор
-    unsigned int createOnEnter;	    //Создание при вводе
-    unsigned int historySelectOnEnter;//История выбора при вводе
+    unsigned int quickSelect;		//Быстрый выбор
+    unsigned int createOnEnter;		//Создание при вводе
+    unsigned int historySelectOnEnter;	//История выбора при вводе
     //TODO // связь по типу
 
     //unsigend int//Состав даты

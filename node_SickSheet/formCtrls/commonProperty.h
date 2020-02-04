@@ -2,7 +2,6 @@
  *  Общие свойства элементов формы
 */
 
-
 #ifndef __COMMON_PROPERTY_H__
 #define __COMMON_PROPERTY_H__
 
@@ -26,7 +25,7 @@ namespace ns_CommonProperty{
 	TOOL_TIP_REPRESENTATION_POPUP,	// Всплывающая
 	TOOL_TIP_REPRESENTATION_BUTTON	// Кнопка
     };
-}; //ns_CommonProperty
+} //eo ns_CommonProperty
 
 //struct extendedToolTip //Структура Расширенная подсказка???
 
