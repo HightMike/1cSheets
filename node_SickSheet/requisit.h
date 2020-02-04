@@ -8,6 +8,8 @@
 #ifndef __REQUISIT_H__
 #define __REQUISIT_H__
 
+#include <string>
+
 enum REQUISIT_TYPE_e{
     REQUISIT_TYPE_NUMBER = 0,	// Число
     REQUISIT_TYPE_STRING,	// Строка
@@ -15,6 +17,8 @@ enum REQUISIT_TYPE_e{
     REQUISIT_TYPE_BOOL,		// Булево
     REQUISIT_TYPE_REFERENCE	// Ссылка
 };
+
+using namespace std;
 
 class Requisit{
 private:
